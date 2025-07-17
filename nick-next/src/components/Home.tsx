@@ -19,6 +19,7 @@ const projectsData = [
     image: "images/amazon-logo.jpeg",  // 
     title: "String Swift - Racket Stringing Ordering Platform",
     github_link: "https://github.com/Cloud-404BrainNotFound", 
+    description: "",
     role:
       "Architected a microservices backend using AWS and Heroku, delivered real-time order tracking UI, and implemented authentication and booking with FastAPI and Docker.",
     text_color: "text-blue-600",
@@ -30,6 +31,7 @@ const projectsData = [
     image: "images/openai-logo.jpeg", 
     title: "CoverCraft AI - Cover Letter Generator",
     github_link: "https://github.com/dl364823/CoverCraftAi", 
+    description: "",
     role:
       "Built an AI-powered solution using OpenAI API to generate tailored cover letters with real-time WebSocket streaming and retrieval-augmented generation.",
     text_color: "text-purple-600",
@@ -92,7 +94,7 @@ const educationData = [
     title: 'Columbia University',
     github_link: 'https://www.columbia.edu/',
     description: 'Master of Science in Computer Science',
-
+    role:'',
     text_color: 'text-blue-200',
     tags: ["Computer Science", "Cloud Infrastructure", "Database", "Generative AI"],
     start_date: "August 2023",
@@ -103,6 +105,7 @@ const educationData = [
     title: 'New York University',
     github_link: 'https://www.nyu.edu/',
     description: 'Master of Art in Politics',
+    role:'',
     text_color: 'text-blue-200',
     start_date: "August 2021",
     end_date: "May 2023" 
@@ -112,6 +115,7 @@ const educationData = [
     title: 'City University of Hong Kong',
     github_link: 'https://www..edu/',
     description: 'Bachelor of Social Science in Public Policy and Political Science',
+    role:'',
     text_color: 'text-blue-200',
     start_date: "August 2015",
     end_date: "May 2019"
@@ -143,20 +147,6 @@ const socialLinks = [
   },
 ];
 
-const SocialButton = ({ href, icon, label }: any) => (
-  <motion.a
-    href={href}
-    target="_blank"
-    rel="noopener noreferrer"
-    whileHover={{ scale: 1.08, boxShadow: "0 0 20px 0 #7b47fd33" }}
-    whileTap={{ scale: 0.96 }}
-    className="w-full flex items-center justify-center gap-2 px-4 py-2 mt-2 bg-gradient-to-r from-[#4f46e5]/90 to-[#8b5cf6]/80 rounded-2xl shadow-md transition text-white font-bold text-base md:text-lg hover:brightness-110 focus:outline-none"
-    aria-label={label}
-  >
-    {icon}
-    <span className="ml-2">{label}</span>
-  </motion.a>
-);
 
 const Home: React.FC = () => {
   const [activeTab, setActiveTab] = useState("experience");
@@ -252,7 +242,7 @@ const Home: React.FC = () => {
               px-2 md:px-0
               selection:bg-blue-400/20 selection:text-blue-900
             ">
-              Hi, I’m Roger Li, a software engineer passionate about building scalable, secure solutions across web, cloud infrastructure, and AI. Currently, I’m a full-stack intern at 
+              Hi, I&apos;m Roger Li, a software engineer passionate about building scalable, secure solutions across web, cloud infrastructure, and AI. Currently, I&apos;m a full-stack intern at 
               <span className="gradient-text">{" "}Miora Brooklyn (InnoSeq Inc.)</span>, leading the front-end migration from HTML to React, building internal and external platforms, including secure APIs, HIPAA compliance, and payment integration. Previously, I was a backend developer at a 
               <span className="gradient-text">{" "}stealth startup</span>, building MVP cloud systems on Firebase and GCP. At 
               <span className="gradient-text">{" "}Network Tree</span>, I shipped a professional networking app from scratch, developing the React frontend and automating CI/CD pipelines with AWS ECS and Jenkins. 
