@@ -211,7 +211,7 @@ const Home: React.FC = () => {
           <div className="flex flex-col gap-8 mt-4">
             <motion.div whileHover={{ scale: 1.06 }} whileTap={{ scale: 0.98 }}>
               <GlowingButton
-                href="/resume.pdf"
+                href="/Dongzhou_Li_Resume.pdf"
                 icon={<FaFilePdf className="text-3xl" />}
               >
                 Resume
