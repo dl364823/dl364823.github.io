@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-gradient-to-br from-[#18181b] via-[#23272f] to-[#1e293b]">
-      <body className="min-h-screen flex flex-col bg-gradient-to-br from-[#18181b] via-[#23272f] to-[#1e293b]">
+      <body className="min-h-screen flex flex-col">
         <Header />
         <main className="flex-1 flex flex-col md:flex-row items-stretch">
           {children}
