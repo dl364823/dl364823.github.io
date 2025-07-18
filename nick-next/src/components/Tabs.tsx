@@ -1,6 +1,13 @@
 import React from "react";
 
-const Tabs = ({ tabs, activeTab, setActiveTab }: { tabs: any[]; activeTab: string; setActiveTab: (key: string) => void }) => (
+interface TabsProps {
+  activeTab: string;
+  setActiveTab: (tab: string) => void;
+  tabs: { key: string; label: string }[];
+}
+
+
+const Tabs : React.FC<TabsProps> = ({ activeTab, setActiveTab, tabs }) => (
   <div className="flex justify-center gap-10 mt-10 mb-2 w-full">
     {tabs.map(tab => (
       <button
